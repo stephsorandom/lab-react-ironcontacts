@@ -6,7 +6,9 @@ import contacts from './contacts.json';
 
 class App extends React.Component {
    getContacts() {
-      let contactList = [contacts[0], contacts[1], contacts[2], contacts[3], contacts[4]];
+      // let contactList = [contacts[0], contacts[1], contacts[2], contacts[3], contacts[4]];
+      let contactList = contacts.splice(1, 0, 5)
+      console.log(contactList)
     return contactList;
     }
     populateCelebs() {
